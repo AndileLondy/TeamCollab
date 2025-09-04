@@ -1,0 +1,95 @@
+Project Prompt: Municipal Grant Management and Transparency System (MGMTS)
+1. Background & Problem Statement:
+The Department of Finance allocates grants for municipal applicants. The current manual process is plagued by a lack of transparency and communication. Applicants submit applications but often receive no response, leading to frustration and a loss of trust. Furthermore, the internal process for evaluating applications, allocating funds, and ensuring accountability is opaque and prone to error or manipulation.
+
+2. Solution Vision:
+To develop a secure, transparent, and efficient web-based application that automates the initial screening process, ensures clear communication with applicants at every stage, enforces a rigorous and auditable internal evaluation workflow, and guarantees the integrity of fund allocation from the highest authority down to the successful applicant.
+
+3. Core Functional Requirements:
+
+a) For Applicants (Citizens):
+
+User Portal: Ability to create a secure account and log in.
+
+Application Submission: A digital form to apply for available grants.
+
+Transparent Tracking: A real-time dashboard to view their application status (e.g., Received, Under Review, Rejected - Criteria Not Met, Shortlisted, Approved, Funding Allocated).
+
+Automated Communication: Receive immediate, system-generated notifications at every status change (e.g., "Thank you for your application," "We regret to inform you...", "Your application has been shortlisted!").
+
+b) For Municipal Evaluators (Department Staff):
+
+Secure Login: Access to an evaluation dashboard.
+
+Manage Evaluations: View a queue of applications that passed the initial system screen.
+
+Human Verification: Manually verify the system's shortlist, checking for eligibility and authenticity.
+
+Status Updates: Change an application's status (e.g., to Pending - More Info Required, Rejected - Invalid Documentation, Recommended for Approval) and mandatorily provide a reason for the change.
+
+Progress Tracking: Track their evaluation progress and workload.
+
+c) For The Chief Validator (e.g., Department Head):
+
+Final Approval: Review the batch of applications recommended by evaluators.
+
+Bulk/Single Action: Approve or reject the final shortlist.
+
+Audit Log: See a complete history of which evaluator handled which application and why.
+
+d) For The Top Authority (Minister of Finance):
+
+Centralized Validation & Fund Approval: View a final, consolidated report of all approved applications and the total grant amount required.
+
+Digital Sign-Off: Provide a final, secure digital signature to approve the fund allocation.
+
+Integrity Check: The system must verify that the amount signed off by the Minister exactly matches the sum of all approved grants. Any discrepancy will flag the transaction and halt the entire process until resolved, preventing any funds from being disbursed incorrectly.
+
+4. Process Flow (The "How It Works" Scenario):
+
+An Applicant applies online. The system automatically screens for basic criteria (e.g., completed form, valid ID number, correct municipality).
+
+Auto-Rejection: If basic criteria are not met, the application is automatically rejected, and the applicant is notified instantly with the reason.
+
+Auto-Shortlisting: For eligible applications, the system scores and ranks them based on predefined, weighted criteria (e.g., income level, project impact). It automatically shortlists the top 20 candidates for a grant that only has 10 slots, creating a prioritized waiting list.
+
+A Municipal Evaluator logs in (with 2FA). They manually verify the top 10 applications. If they reject one (e.g., due to invalid documentation), they must provide a reason. The system then automatically promotes the next applicant from the waiting list (#11) to the top 10, and the evaluator is notified to verify this new application. This ensures the slots are always filled with the most eligible candidates.
+
+The Chief Validator reviews the final 10 recommended applications and gives final approval.
+
+The Minister of Finance logs in to a dedicated portal. The system presents the total sum of grants to be disbursed (e.g., R 1,000,000). The Minister digitally signs off on this exact amount.
+
+System Integrity Check: The system compares the signed amount to the calculated total.
+
+If it matches: The status of all applications is updated to Funding Allocated, and successful applicants are notified. The process is complete.
+
+If it does NOT match: The system immediately flags the discrepancy, freezes the disbursement process, and alerts all senior officials. The Minister must re-review and sign the correct amount before proceeding.
+
+5. Non-Functional & Security Requirements:
+
+Technology Stack:
+
+Frontend: React.js for a dynamic, single-page application.
+
+Backend: Node.js with Express.js for building a scalable API.
+
+Database: MySQL for reliable and structured data storage.
+
+Hosting: A secure cloud provider (AWS/Azure/GCP).
+
+Security Measures:
+
+2-Factor Authentication (2FA): Mandatory for all government staff (Evaluators, Validator, Minister).
+
+Full Encryption: SSL/TLS for data in transit, encryption for sensitive data at rest in MySQL.
+
+Audit Trail: An immutable log in the MySQL database tracking every login, status change, approval, and sign-off (including user, timestamp, and action reason).
+
+Session Timeout: Automatic logout after a period of inactivity.
+
+Role-Based Access Control (RBAC): Strict permissions ensuring users only see and do what their role allows.
+
+Scalability & Reliability: The architecture must be designed to handle a large volume of applications during grant opening periods without performance degradation.
+
+6. Deliverable:
+A fully functional, secure, and tested web application that meets the above requirements, restoring trust and efficiency to the municipal grant allocation process.
