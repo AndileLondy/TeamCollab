@@ -1,0 +1,9 @@
+C:\Users\27672\Desktop\Clinic-Management-System-main\ClinicBusinessLayer\bin\Debug\ClinicBusinessLayer.dll
+C:\Users\27672\Desktop\Clinic-Management-System-main\ClinicBusinessLayer\bin\Debug\ClinicBusinessLayer.pdb
+C:\Users\27672\Desktop\Clinic-Management-System-main\ClinicBusinessLayer\bin\Debug\ClinicDataAccessLayer.dll
+C:\Users\27672\Desktop\Clinic-Management-System-main\ClinicBusinessLayer\bin\Debug\ClinicDataAccessLayer.pdb
+C:\Users\27672\Desktop\Clinic-Management-System-main\ClinicBusinessLayer\obj\Debug\ClinicBusinessLayer.csproj.AssemblyReference.cache
+C:\Users\27672\Desktop\Clinic-Management-System-main\ClinicBusinessLayer\obj\Debug\ClinicBusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\27672\Desktop\Clinic-Management-System-main\ClinicBusinessLayer\obj\Debug\ClinicBu.9A10F941.Up2Date
+C:\Users\27672\Desktop\Clinic-Management-System-main\ClinicBusinessLayer\obj\Debug\ClinicBusinessLayer.dll
+C:\Users\27672\Desktop\Clinic-Management-System-main\ClinicBusinessLayer\obj\Debug\ClinicBusinessLayer.pdb

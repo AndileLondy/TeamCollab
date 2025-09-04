@@ -1,0 +1,6 @@
+C:\Users\27672\Desktop\Clinic-Management-System-main\ClinicDataAccessLayer\bin\Debug\ClinicDataAccessLayer.dll
+C:\Users\27672\Desktop\Clinic-Management-System-main\ClinicDataAccessLayer\bin\Debug\ClinicDataAccessLayer.pdb
+C:\Users\27672\Desktop\Clinic-Management-System-main\ClinicDataAccessLayer\obj\Debug\ClinicDataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\27672\Desktop\Clinic-Management-System-main\ClinicDataAccessLayer\obj\Debug\ClinicDataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\27672\Desktop\Clinic-Management-System-main\ClinicDataAccessLayer\obj\Debug\ClinicDataAccessLayer.dll
+C:\Users\27672\Desktop\Clinic-Management-System-main\ClinicDataAccessLayer\obj\Debug\ClinicDataAccessLayer.pdb
